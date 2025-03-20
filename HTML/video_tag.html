@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video tag</title>
+</head>
+<body>
+
+    <!-- It does not have any controls that means it is working  -->
+    <video src="assets/shiv.mp4" alt="Task Video Showing" height="300px"></video>
+
+
+
+    <br/><br/><br/><br/><br/><br/>
+
+
+    <!-- It have controls that means it give a control to the user but it does not have a autoplay that means it does not have functionality to replay  automatically -->
+
+    <video src="assets/shiv.mp4" alt="Task Video Showing" height="300px" controls></video>
+
+
+
+
+    <br/><br/><br/><br/><br/><br/>
+
+     <!-- It have controls that means it give a control to the user and it have a autoplay that means it have functionality to replay  automatically  but it is not working.... -->
+
+     <!-- Because In some browsers (e.g. Chrome 70.0) autoplay is not working if no muted attribute is present. -->
+
+    <video src="assets/shiv.mp4" alt="Task Video Showing" height="300px" autoplay controls ></video>
+
+
+
+    <br/><br/><br/><br/><br/><br/>
+
+    <!-- so the solution will be  -->
+
+    <video src="assets/shiv.mp4" alt="Task Video Showing" height="300px" autoplay controls  loop muted ></video>
+
+
+</body>
+</html>
